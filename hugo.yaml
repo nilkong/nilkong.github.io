@@ -1,0 +1,58 @@
+# Basics
+baseURL: https://nilkong.github.io
+title: NiL
+theme: PaperMod
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - name: Search
+      url: /search/
+      weight: 10
+    - name: Archive
+      url: /archives/
+      weight: 20
+    - name: Categories
+      url: /categories/
+      weight: 30
+
+# LaTex Rendering Setup
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - \[
+              - \]
+            - - "$$"
+              - "$$"
+          inline:
+            - - \(
+              - \)
+            - - "$"
+              - "$"
+
+# Home Page Config
+params:
+  defaultTheme: dark
+  env: production
+  math: true
+  profileMode:
+    enabled: true
+    title: "NiL"
+    subtitle: "subtitle"
+    buttons:
+      - name: Notes
+        url: "/notes"
+      - name: Posts
+        url: "/posts"
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/nilkong"

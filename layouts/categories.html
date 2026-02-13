@@ -1,0 +1,129 @@
+{{- define "main" }}
+<style>
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.category-card {
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.2s, border-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--tertiary);
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.folder-icon {
+  width: 48px;
+  height: 48px;
+  stroke: var(--tertiary);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.dir-label {
+  font-size: 0.75rem;
+  color: var(--secondary);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.category-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 1rem 0;
+  flex-grow: 1;
+}
+
+.category-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 2px;
+  background: var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--tertiary);
+  transition: width 0.3s;
+}
+
+.file-count {
+  font-size: 0.875rem;
+  color: var(--secondary);
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+</style>
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+{{- $categories := (site.Taxonomies.categories.ByCount) }}
+{{- if gt (len $categories) 0 }}
+{{- $maxCount := (index $categories 0).Count }}
+<div class="category-grid">
+  {{- range $categories }}
+  {{- $percentage := mul (div (float .Count) (float $maxCount)) 100 }}
+  <a href="{{ .Page.RelPermalink }}" class="category-card">
+    <div class="category-header">
+      <svg class="folder-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 6C3 4.89543 3.89543 4 5 4H9L11 6H19C20.1046 6 21 6.89543 21 8V18C21 19.1046 20.1046 20 19 20H5C3.89543 20 3 19.1046 3 18V6Z" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="dir-label">DIR</span>
+    </div>
+    <div class="category-name">{{ .Name }}</div>
+    <div class="category-footer">
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: {{ $percentage }}%"></div>
+      </div>
+      <span class="file-count">{{ .Count }} {{ cond (eq .Count 1) "FILE" "FILES" }}</span>
+    </div>
+  </a>
+  {{- end }}
+</div>
+{{- end }}
+{{- end }}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on NiL</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on NiL</description>
+    <generator>Hugo -- 0.155.3</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Feb 2024 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post 3</title>
+      <link>http://localhost:1313/posts/test3/</link>
+      <pubDate>Thu, 01 Feb 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/test3/</guid>
+      <description>&lt;p&gt;Sample content for test post 3.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Test Post 2</title>
+      <link>http://localhost:1313/posts/test2/</link>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/test2/</guid>
+      <description>&lt;p&gt;Sample content for test post 2.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My 1st post</title>
+      <link>http://localhost:1313/posts/test/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/test/</guid>
+      <description>Desc Text.</description>
+    </item>
+  </channel>
+</rss>
