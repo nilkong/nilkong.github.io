@@ -67,7 +67,7 @@ params:
     subtitle: "csie"
     buttons:
       - name: "Notes"
-        url: "/notes/"
+        url: "/note/"
       - name: "Posts"
         url: "/posts/"
   socialIcons:
