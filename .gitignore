@@ -1,11 +1,9 @@
 # System
 .DS_Store
 .vscode/
-.github/
 
 # Hugo
 .hugo_build.lock
 hugo_stats.json
 public/
 resources/
-
