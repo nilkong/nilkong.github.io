@@ -1,7 +1,10 @@
-# Basics
 baseURL: https://nilkong.github.io
 title: NiL
 theme: PaperMod
+languageCode: zh-tw
+hasCJKLanguage: true
+pagination:
+  pagerSize: 5
 
 outputs:
   home:
@@ -11,14 +14,14 @@ outputs:
 
 menu:
   main:
-    - name: Search
-      url: /search/
+    - name: "Search"
+      url: "/search/"
       weight: 10
-    - name: Archive
-      url: /archives/
+    - name: "Archive"
+      url: "/archives/"
       weight: 20
-    - name: Categories
-      url: /categories/
+    - name: "Categories"
+      url: "/categories/"
       weight: 30
 
 # LaTex Rendering Setup
@@ -41,18 +44,29 @@ markup:
 
 # Home Page Config
 params:
-  defaultTheme: dark
   env: production
-  math: true
+  defaultTheme: dark
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowToc: true
+  TocOpen: false
+  comments: true
   profileMode:
     enabled: true
     title: "NiL"
-    subtitle: "subtitle"
+    subtitle: "csie"
     buttons:
-      - name: Notes
-        url: "/notes"
-      - name: Posts
-        url: "/posts"
+      - name: "Notes"
+        url: "/notes/"
+      - name: "Posts"
+        url: "/posts/"
   socialIcons:
+    - name: "threads"
+      url: "https://www.threads.com/@nil_study_diary"
     - name: "github"
       url: "https://github.com/nilkong"
+    - name: "email"
+      url: "mailto:nilkong06@gmail.com"
