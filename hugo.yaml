@@ -1,3 +1,4 @@
+# Site Config
 baseURL: https://nilkong.github.io
 title: NiL
 theme: PaperMod
@@ -12,6 +13,7 @@ outputs:
     - RSS
     - JSON
 
+# Navigation Bar Config
 menu:
   main:
     - name: "Search"
@@ -41,6 +43,11 @@ markup:
               - \)
             - - "$"
               - "$"
+
+# Caches Config
+caches:
+  images:
+    dir: :cacheDir/images
 
 # Home Page Config
 params:
