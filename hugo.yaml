@@ -28,6 +28,14 @@ menu:
 
 # LaTex Rendering Setup
 markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    style: "catppuccin-mocha"
+    tabWidth: 4
   goldmark:
     extensions:
       passthrough:
