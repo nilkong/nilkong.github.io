@@ -2,86 +2,94 @@
 baseURL: https://nilkong.github.io
 title: NiL
 theme: PaperMod
+
 languageCode: zh-tw
 hasCJKLanguage: true
+enableRobotsTXT: true
 pagination:
-  pagerSize: 5
+    pagerSize: 5
 
 outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+    home:
+        - HTML
+        - RSS
+        - JSON
+    section:
+        - HTML
+    taxonomy:
+        - HTML
 
 # Navigation Bar Config
 menu:
-  main:
-    - name: "Search"
-      url: "/search/"
-      weight: 10
-    - name: "Archive"
-      url: "/archives/"
-      weight: 20
-    - name: "Categories"
-      url: "/categories/"
-      weight: 30
+    main:
+        - name: "Search"
+          url: "/search/"
+          weight: 10
+        - name: "Archive"
+          url: "/archives/"
+          weight: 20
+        - name: "Categories"
+          url: "/categories/"
+          weight: 30
 
 # LaTex Rendering Setup
 markup:
-  highlight:
-    codeFences: true
-    guessSyntax: false
-    lineNos: true
-    lineNumbersInTable: true
-    noClasses: true
-    style: "catppuccin-mocha"
-    tabWidth: 4
-  goldmark:
-    extensions:
-      passthrough:
-        enable: true
-        delimiters:
-          block:
-            - - \[
-              - \]
-            - - "$$"
-              - "$$"
-          inline:
-            - - \(
-              - \)
-            - - "$"
-              - "$"
+    highlight:
+        codeFences: true
+        guessSyntax: false
+        lineNos: true
+        lineNumbersInTable: true
+        noClasses: true
+        style: "catppuccin-mocha"
+        tabWidth: 4
+    goldmark:
+        extensions:
+            passthrough:
+                enable: true
+                delimiters:
+                    block:
+                        - - \[
+                          - \]
+                        - - "$$"
+                          - "$$"
+                    inline:
+                        - - \(
+                          - \)
+                        - - "$"
+                          - "$"
 
 # Caches Config
 caches:
-  images:
-    dir: :cacheDir/images
+    images:
+        dir: :cacheDir/images
 
 # Home Page Config
 params:
-  env: production
-  defaultTheme: dark
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowCodeCopyButtons: true
-  ShowBreadCrumbs: true
-  ShowPostNavLinks: true
-  ShowToc: true
-  TocOpen: false
-  comments: true
-  profileMode:
-    enabled: true
-    title: "NiL"
-    subtitle: "csie"
-    buttons:
-      - name: "Notes"
-        url: "/note/"
-      - name: "Posts"
-        url: "/posts/"
-  socialIcons:
-    - name: "threads"
-      url: "https://www.threads.com/@nil_study_diary"
-    - name: "github"
-      url: "https://github.com/nilkong"
-    - name: "email"
-      url: "mailto:nilkong06@gmail.com"
+    env: production
+    author:
+        name: NiL
+    defaultTheme: dark
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowCodeCopyButtons: true
+    ShowBreadCrumbs: true
+    ShowPostNavLinks: true
+    ShowToc: true
+    TocOpen: false
+    comments: true
+    profileMode:
+        enabled: true
+        title: "NiL"
+        subtitle: "csie"
+        buttons:
+            - name: "Notes"
+              url: "/note/"
+            - name: "Posts"
+              url: "/posts/"
+    socialIcons:
+        - name: "threads"
+          url: "https://www.threads.com/@nil_study_diary"
+        - name: "github"
+          url: "https://github.com/nilkong"
+        - name: "email"
+          url: "mailto:nilkong06@gmail.com"
