@@ -5,3 +5,6 @@
     data-website-id="fd422876-5521-46fb-acb6-4aa2b7168056"
 ></script>
 {{- end }}
+{{- if or .Params.math .Site.Params.math }}
+{{- partial "math.html" . }}
+{{- end }}
