@@ -77,6 +77,18 @@ params:
     ShowToc: true
     TocOpen: false
     comments: true
+    giscus:
+        repo: "nilkong/nilkong.github.io"
+        repoId: "R_kgDORQJuiQ"
+        category: "Announcements"
+        categoryId: "DIC_kwDORQJuic4C42CL"
+        mapping: "pathname"
+        strict: "0"
+        reactionsEnabled: "1"
+        emitMetadata: "0"
+        inputPosition: "bottom"
+        theme: "transparent_dark"
+        lang: "zh-TW"
     profileMode:
         enabled: true
         title: "NiL"
