@@ -20,7 +20,7 @@ cover:
 ---
 
 <iframe 
-  src="https://open.spotify.com/track/0VUORVhLmsxKTSwg4P9CrB?si=5229c925d29740af"
+  src="https://open.spotify.com/embed/track/0VUORVhLmsxKTSwg4P9CrB?si=5229c925d29740af"
   width="100%" 
   height="152" 
   frameborder="0" 
