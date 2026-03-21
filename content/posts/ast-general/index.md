@@ -19,15 +19,6 @@ cover:
   caption: ""
 ---
 
-<iframe 
-  src="https://open.spotify.com/embed/track/0VUORVhLmsxKTSwg4P9CrB?si=5229c925d29740af"
-  width="100%" 
-  height="152" 
-  frameborder="0" 
-  allowtransparency="true" 
-  allow="encrypted-media">
-</iframe>
-
 # 序
 
 這篇文章或許一兩年前就該出來了。考完分科後我就一直想寫，~~但一直有點懶~~，加上當時也沒有合適的平台，就這樣拖到了現在。
