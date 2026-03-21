@@ -43,6 +43,8 @@ markup:
         style: "catppuccin-mocha"
         tabWidth: 4
     goldmark:
+        renderer:
+            unsafe: true
         extensions:
             passthrough:
                 enable: true
