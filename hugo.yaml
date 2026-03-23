@@ -57,6 +57,8 @@ markup:
                           - \)
                         - - "$"
                           - "$"
+        renderer:
+          unsafe: true
 
 # Caches Config
 caches:
