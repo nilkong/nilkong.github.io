@@ -3,6 +3,7 @@ title: "Rendering Test Post"
 date: 2026-02-14
 draft: false
 tags: ["test", "markdown", "latex"]
+author: "NiL"
 categories: ["Test"]
 math: true
 ---
