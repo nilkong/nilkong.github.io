@@ -242,7 +242,7 @@ cover:
 | --------------------- | ------------------------------------------------------------------------------- |
 | Claude Sonnet 4.6     | 對於解釋概念的能力遠高於 Gemini, ChatGPT, Deepseek 等，並且現在可以快速產生 Flowchart 和 Diagram 之類的解釋概念 |
 | Gemini 3 Thinking/Pro | 對於數學物理解題非常強                                                                     |
-| NotebookLM            | 如果有數十數百頁的講義請使用 NotebookLM，正常模型會因為使用 RAG 技術產生幻覺                                  |
+| NotebookLM            | 如果有數十數百頁的講義請使用 NotebookLM，正常模型會因為使用 context window 不夠大而產生幻覺                                  |
 
 > 雖然有很多其他人做的專門給學習專用的產品，但我到目前為止覺得這三個就夠了，而且 Gemini 之前有送一年訂閱實在太香了（Ｘ
 
