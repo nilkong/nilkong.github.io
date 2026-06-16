@@ -93,7 +93,7 @@ params:
         lang: "zh-TW"
     profileMode:
         enabled: true
-        title: "NiL"
+        title: "NiLkong"
         subtitle: "csie"
         buttons:
             - name: "Notes"
