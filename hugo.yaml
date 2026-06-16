@@ -1,6 +1,6 @@
 # Site Config
 baseURL: "https://nilkong.com/"
-title: NiL
+title: NiLkong
 theme: PaperMod
 
 languageCode: zh-tw
@@ -69,7 +69,7 @@ caches:
 params:
     env: production
     author:
-        name: NiL
+        name: NiLkong
     defaultTheme: dark
     ShowReadingTime: true
     ShowShareButtons: true

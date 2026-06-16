@@ -7,7 +7,7 @@ description: ""
 summary: "筆記和錯題本的目的是節省時間與精力，而非產出一本厚厚的本子。這篇整理了我對三種錯題類型的分類方式、錯題本的記錄與管理邏輯，以及什麼才算是真正有效的筆記。"
 tags: ["分科測驗", "備考", "升學", "筆記"]
 categories: ["經驗分享"]
-author: "NiL"
+author: "NiLkong"
 ShowToc: true
 TocOpen: false
 ShowReadingTime: true

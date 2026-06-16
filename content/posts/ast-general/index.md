@@ -7,7 +7,7 @@ description: ""
 summary: "從二月備考到考出數甲 59、物理 60、化學 60 的心得整理，包含時間規劃、資源選擇、心態調整，以及大學後對升學制度的反思"
 tags: ["分科測驗", "經驗分享", "備考", "升學"]
 categories: ["經驗分享"]
-author: "NiL"
+author: "NiLkong"
 ShowToc: true
 TocOpen: false
 ShowReadingTime: true
